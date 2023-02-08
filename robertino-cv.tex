@@ -1,20 +1,4 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Adaptation of:Deedy - One Page Two Column Resume Version 1.2 (16/9/2014)
-% 
-% Original author:
-% Debarghya Das (http://debarghyadas.com)
-%
-% Original repository:
-% https://github.com/deedydas/Deedy-Resume
-%
-% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
-%
-% This template uses several fonts not included with Windows/Linux by
-% default. If you get compilation errors saying a font is missing, find the line
-% on which the font is used and either change it to a font included with your
-% operating system or comment the line out to use the default font.
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % Known Issues:
 % 1. Overflows onto second page if any column's contents are more than the
@@ -22,7 +6,6 @@
 % 2. Hacky space on the first bullet point on the second column.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \documentclass[]{robertino-cv}
 \usepackage{fancyhdr}
@@ -45,8 +28,8 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \namesection{Robertino}{Martinez}{
-\href{https://twitter.com/robertinom_en}{twitter.com/robertinom\_en} |
-\href{https://github.com/IIPatternII}{github.com/IIPatternII} | \urlstyle{same}\href{https://robertinom.com}{robertinom.com} |
+\href{https://twitter.com/robertinom_en}{twitter.com/\_roberm\_} |
+\href{https://github.com/IIPatternII}{github.com/rober-m} | \urlstyle{same}\href{https://robertinom.com}{robertinom.com} |
 \href{mailto:robertinom@protonmail.com}{robertinom@protonmail.com}
 }
 
@@ -63,14 +46,25 @@
 
 \section{Work experience} 
 
+\runsubsection{Educator}
+\descript{| Input Output (IOG/IOHK) }
+\location{2022-Present}
+\begin{tightemize}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\item Create and deliver courses, hackathons, and training about Haskell, Plutus, and other Cardano-related technologies.
+\item Help to define best practices for smart contract development. 
+\item Cardano developer advocate.
+\end{tightemize}
+\sectionsep
+
 \runsubsection{ML Engineer}
 \descript{| Government employee }
 \location{2019-2020}
 \begin{tightemize}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \item Hydrological and statistical analysis of the San Roque basin using Python and Pandas.
 \item Development and assessment of an artificial neural network model capable of predicting the response of the basin and the level of the San Roque dam up to 6 months in advance (TensorFlow, Python, QGis).
-\item Development of a simple web application for governmental engineers to effortlessly use the AI model for decision-making about the hydrologic resources of the San Roque dam (React, TensorFlow).
+\item Development of a web application to effortlessly use the AI model for decision-making about the dam's hydrologic resources (React, TensorFlow).
 \end{tightemize}
 \sectionsep
 
@@ -104,7 +98,7 @@
 \descript{| Civil Engineering (Argentina) }
 \location{2012-2020}
 \begin{tightemize}
-\item Academic average: 8.3/10
+\item Academic average: 8.3/10.
 \end{tightemize}
 \sectionsep
 
@@ -113,42 +107,7 @@
 \location{2008-2011}
 \sectionsep
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \section{Skills}
-\subsection{Technical skills}
-\location{Proficient with:}
-Flutter \textbullet{}
-Dart \textbullet{}
-JavaScript \textbullet{}
-TypeScript \textbullet{}
-React \textbullet{}
-Firebase \textbullet{} \\
-Node.js \textbullet{}
-HTML \textbullet{}
-CSS \textbullet{}
-Python \textbullet{}
-Machine Learning \textbullet{}
-Linux
-
-\location{Familiar with:}
-Blockchain \textbullet{}
-SQL\textbullet{}
-PHP \textbullet{}
-Haskell \textbullet{}
-Plutus
-\sectionsep
-
-\subsection{Soft skills}
-\location{Strong:}
-Leadership \textbullet{}
-Resourcefulness \textbullet{}
-Initiative \textbullet{}
-Bilingual Communication (English and Spanish) \textbullet{}
-Teaching
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -168,7 +127,7 @@ Teaching
 
 \runsubsection{Arquia}
 \descript{| Co-Founder \& CTO }
-\location{2021 - Present}
+\location{2021 - 2022}
 The company develops multiple projects in multiple verticals using different technologies. I am solely responsible for the technological aspect and partly responsible for the economic and operational aspects.
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
@@ -190,7 +149,7 @@ Client portal for small/medium businesses and freelancers (prelaunch).
 \begin{tightemize}
 \item Design and develop the Web platform using React.
 \item Directing all product efforts (idem Arquia).
-\item Directing all marketing and operational efforts: profiling customers, campaigns, analysis of usage data, market, competitors, various metrics to optimize the product and improve decision-making, identify pivots, etc.
+\item Directing all marketing and operational efforts: Profiling customers, campaigns, analysis of market trends, usage data, competitors, and other metrics related to decision-making.
 \end{tightemize}
 \sectionsep
 
@@ -200,8 +159,8 @@ Client portal for small/medium businesses and freelancers (prelaunch).
 \location{2020 – Present | \href{https://ebcourses.com/}{ebcourses.com} }
 Platform that provides courses designed following scientific principles to maximize long-term retention.
 \begin{tightemize}
-\item Design and development of different courses, including "Web development for beginners." The courses consist of theory, practice, and Anki flashcards (MailerLite + Anki).
-\item Design and development of a web platform capable of managing users and enrolling them in courses automatically (React + Firebase + MailerLite API).
+\item Design and development of different courses consisting of theory, practice, and active recall exercises.
+\item Design and development of an educational platform (React + Firebase + MailerLite API).
 \item Directing all product efforts (idem Arquia) and directing all marketing and operational efforts (idem ClientFlows).
 \end{tightemize}
 \sectionsep
@@ -219,4 +178,66 @@ PDF reader with artificial intelligence capable of interpreting the contents, an
 
 
 \end{minipage} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Skills} % It's at the end of previous column one.
+\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.48\textwidth} 
+
+
+\subsection{Technical skills}
+%\location{Proficient with:}
+Blockchain \textbullet{}
+Haskell \textbullet{}
+Plutus \textbullet{}
+Flutter \textbullet{}
+Dart \textbullet{}
+JavaScript \textbullet{}
+TypeScript \textbullet{}
+React \textbullet{}
+Firebase \textbullet{}
+Python \textbullet{}
+Machine Learning %\textbullet{}
+%Linux \textbullet{}
+%HTML \textbullet{}
+%CSS \textbullet{}
+%Node.js 
+
+%\location{Familiar with:}
+%Blockchain \textbullet{}
+%SQL\textbullet{}
+%PHP \textbullet{}
+%Haskell \textbullet{}
+%Plutus
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.50\textwidth} 
+
+\subsection{Soft skills}
+%\location{Strong:}
+Leadership \textbullet{}
+Resourcefulness \textbullet{}
+Initiative \textbullet{}
+Bilingual Communication (English and Spanish) \textbullet{}
+Pedagogy
+\end{minipage} 
+
+\sectionsep
+
 \end{document}  \documentclass[]{article}
